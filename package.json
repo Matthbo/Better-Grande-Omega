@@ -5,12 +5,12 @@
   "main": "main.js",
   "author": "Matthijs 'Matthbo' Booman",
   "license": "UNLICENSED",
+  "private": true,
   "scripts": {
-    "start": "node bin/my-app",
+    "start": "node bgo/checkVersion && node bin/my-app",
     "electron": "electron ."
   },
   "dependencies": {
-    "@types/shelljs": "^0.8.0",
     "arch": "^2.1.1",
     "devtools-protocol": "0.0.623118",
     "diff-match-patch": "^1.0.4",
