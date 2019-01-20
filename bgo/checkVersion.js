@@ -50,7 +50,7 @@ async function main(){
       isOutdated = onlineVersion > localVersion
 
       if(isOutdated) {
-        console.warn("GrandeOmega needs to be updated! download the new GrandeOmega zip and replace wwwroot with the wwwroot from the zip")
+        console.warn("\x1b[30m\x1b[103mGrandeOmega needs to be updated! download the new GrandeOmega zip and replace wwwroot with the wwwroot from the zip\x1b[0m")
         console.log("Press enter to continue")
         stdin.resume()
         stdin.once("data", input => {
