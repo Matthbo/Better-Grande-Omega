@@ -5,9 +5,9 @@ const app = electron.app
 // Module to create native browser window.
 const BrowserWindow = electron.BrowserWindow
 
-require('electron-debug')({
+/*require('electron-debug')({
   enabled: false
-});
+});*/
 
 // const language_main = require('../dist/test')
 

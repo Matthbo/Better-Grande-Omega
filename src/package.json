@@ -1,17 +1,18 @@
 {
-  "description": "Better Grande Omega builder",
-  "scripts": {
-    "electron": "electron ./src",
-    "build": "node scripts/build",
-    "pack:win": "node scripts/packWin"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Matthbo/Better-Grande-Omega.git"
-  },
-  "author": "Matthbo",
+  "name": "Better-GrandeOmega",
+  "version": "1.0.0",
+  "description": "A better Grande Omega",
+  "main": "main.js",
+  "contributors": [
+    "Matthbo",
+    "Dr. Giuseppe Maggiore"
+  ],
   "license": "UNLICENSED",
-  "devDependencies": {
+  "private": true,
+  "bugs": {
+    "url": "https://github.com/Matthbo/Better-Grande-Omega/issues"
+  },
+  "dependencies": {
     "arch": "^2.1.1",
     "devtools-protocol": "^0.0.624433",
     "diff-match-patch": "^1.0.4",
@@ -59,9 +60,6 @@
     "vscode-languageclient": "^5.2.1",
     "vscode-languageserver": "^5.2.1",
     "ws": "^6.1.2",
-    "xml2js": "^0.4.19",
-    "electron": "^4.0.1",
-    "electron-packager": "^13.0.1",
-    "electron-winstaller": "^2.7.0"
+    "xml2js": "^0.4.19"
   }
 }
