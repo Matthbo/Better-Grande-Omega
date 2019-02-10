@@ -24,7 +24,7 @@ function toPackageArch(targetArch){
 
 function buildApp(platform, arch){
   const options = {
-    name: "Better-GrandeOmega",
+    name: "BetterGrandeOmega",
     platform: toPackagePlatform(platform || process.platform),
     arch: toPackageArch(arch || process.env.TARGET_ARCH),
     asar: false,
@@ -71,7 +71,7 @@ function buildApp(platform, arch){
 fs.unlink('src/version.txt', err => {
   if(err) console.error(`Couldn't remove version.txt: ${err.message}`)
 
-  buildApp().then(() => {
-    console.log("Build complete")
+  buildApp().then(info => {
+    console.log('Build complete')
   })
 })

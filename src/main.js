@@ -1,15 +1,6 @@
-const electron = require('electron')
+const { app, autoUpdate, BrowserWindow } = require('electron')
 
-// Module to control application life.
-const app = electron.app
-// Module to create native browser window.
-const BrowserWindow = electron.BrowserWindow
-
-/*require('electron-debug')({
-  enabled: false
-});*/
-
-// const language_main = require('../dist/test')
+if(require('electron-squirrel-startup')) return;
 
 // Keep a global reference of the window object, if you don't, the window will
 // be closed automatically when the JavaScript object is garbage collected.
